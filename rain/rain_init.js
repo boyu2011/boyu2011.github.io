@@ -1,17 +1,19 @@
-function run() {
+$().ready(function () {
 
-    var image = document.getElementById('background');
-    image.crossOrigin = 'anonymous';
+    function run() {
 
-    var engine = new RainyDay({
-        element: 'background',
-        blur: 10,
-        opacity: 1,
-        fps: 30
-    });
-    engine.rain([ [0, 2, 200], [3, 3, 1] ], 100);
-}
+        var image = document.getElementById('background');
+        image.crossOrigin = 'anonymous';
 
-$(window).load(function(){
+        var engine = new RainyDay({
+            element: 'background',
+            blur: 10,
+            opacity: 1,
+            fps: 30
+        });
+        engine.rain([ [0, 2, 200], [3, 3, 1] ], 100);
+    }
+
     run();
-});     
+
+});
