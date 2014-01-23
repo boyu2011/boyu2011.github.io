@@ -1,4 +1,3 @@
-$().ready(function () {
 
     function run() {
 
@@ -14,6 +13,3 @@ $().ready(function () {
         engine.rain([ [0, 2, 200], [3, 3, 1] ], 100);
     }
 
-    run();
-
-});
